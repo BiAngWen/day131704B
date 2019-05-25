@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top">
+                <img src="./img/is king (2).png" alt="">
+
+                <span class="iconfont icon-gengduo-2"></span>
+                <span class="iconfont icon-didian"></span>
+                <span class="iconfont icon-gouwuche"></span>
+                <span class="iconfont icon-fangdajing"></span>
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-all">
+                <div class="swiper-container">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="./img/is king (1).gif" alt="">
+                            <p>VANS X哈利波特联名系列</p>
+                        </div>
+                        <div class="swiper-slide "> <img src="./img/is king (3).png " alt=" ">
+                            <p>VANS 镀铬色变</p>
+                        </div>
+                        <div class="swiper-slide "> <img src="./img/is king (1).png " alt=" ">
+                            <p>VANS SLIP-ON系列</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-dl">
+                    <dl>
+                        <dt><img src="./img/yuan (2).jpg" alt=""></dt>
+                        <dd>格格不入</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="./img/yuan (1).jpg" alt=""></dt>
+                        <dd>重塑经典</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="./img/yuan (1).png" alt=""></dt>
+                        <dd>艺术定制</dd>
+                    </dl>
+                </div>
+                <div class="main">
+
+                    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid red"></canvas></div>
+            </div>
+        </div>
+        <div class="footer ">
+            <div class="footer-top ">
+                <dl><dt><i class="iconfont icon-fenlei-xuanzhong "></i></dt>
+                    <dd>新品上市</dd>
+                </dl>
+                <dl><dt><i class="iconfont icon-riqixuanze "></i></dt>
+                    <dd>最新活动</dd>
+                </dl>
+                <dl><dt><i class="iconfont icon-geren "></i></dt>
+                    <dd>我的账户</dd>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        var c = document.querySelector('#myConcas');
+
+        var mySwiper = new Swiper(".swiper-container ", {
+            init: false,
+            autoplay: true,
+            loop: true
+
+        })
+        mySwiper.init();
+    </script>
+</body>
+
+</html>

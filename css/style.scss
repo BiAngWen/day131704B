@@ -1,0 +1,107 @@
+@import "px2rem";
+$designWidth:37.5px;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: px2rem(375px);
+    height: px2rem(65px);
+    border-bottom: 20px solid black;
+    // justify-content: space-around;
+    // display: flex;
+    .header-top {
+        justify-content: space-around;
+        display: flex;
+        //position: relative;
+        img {
+            width: px2rem(105px);
+            height: px2rem(50px);
+        }
+        span {
+            margin-left: px2rem(15px);
+            flex: 1;
+            height: px2rem(50px);
+            font-size: px2rem(25px);
+            line-height: px2rem(50px);
+        }
+    }
+}
+
+.main {
+    width: px2rem(375px);
+    // margin-top: px2rem(10px);
+    flex: 1;
+    overflow-y: auto;
+    background: #fff;
+    .main-all {
+        height: px2rem(800px);
+        .swiper-container {
+            width: px2rem(375px);
+            height: px2rem(350px);
+            img {
+                width: px2rem(375px);
+                height: px2rem(300px);
+            }
+            p {
+                text-align: center;
+                font-size: px2rem(18px);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+        .main-dl {
+            width: px2rem(375px);
+            display: flex;
+            justify-content: space-around;
+            dl {
+                height: px2rem(30px);
+            }
+            dd {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer {
+    background: white;
+    width: px2rem(375px);
+    height: px2rem(50px);
+    .footer-top {
+        display: flex;
+        width: px2rem(375px);
+        justify-content: space-around;
+        dl {
+            height: px2rem(50px);
+            line-height: 50px;
+            dt {
+                text-align: center;
+                margin-top: px2rem(10px);
+            }
+            i {
+                font-size: px2rem(20px);
+            }
+            dd {
+                margin-top: px2rem(6px);
+                font-size: px2rem(14px);
+            }
+        }
+    }
+}
